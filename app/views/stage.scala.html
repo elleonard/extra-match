@@ -1,0 +1,35 @@
+@(message: String)
+
+@main("Fate EXTRA パターンDB", "/stage") {
+    <div id="main">
+      <section id="message">
+        <article class="post">
+          <p>@message</p>
+        </article>
+      </section>
+      <section id="input_stage">
+        <header><h2>ステージ登録</h2></header>
+        <article class="post">
+          @inputstage()
+        </article>
+      </section>
+      <section id="stage_list">
+        <header><h2>ステージ一覧</h2></header>
+        <article class="post">
+          @stagelist()
+        </article>
+      </section>
+      <section id="delete_stage">
+        <header><h2>ステージ削除</h2></header>
+        <article class="post">
+          @deletestage()
+        </article>
+      </section>
+    </div>
+    <div id="sidebar">
+      <aside class="widget">
+        <h3>メニュー</h3>
+      </aside>
+      @link()
+    </div><!-- end sidebar -->
+}

@@ -1,0 +1,18 @@
+@()
+
+<form action="@routes.EnemyController.insertEnemy" method="post">
+  <input type="hidden" name="stage" value="">
+  <table>
+    <tbody>
+      <tr><th>敵名</th><th>確定</th>
+      <tr>
+        <td>
+          <input type="text" name="enemy"/>
+        </td>
+        <td>
+          <button type="submit" name="push" value="登録">登録</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>

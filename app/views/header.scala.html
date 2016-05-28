@@ -1,0 +1,18 @@
+@(current: String)
+
+<header id="header">
+  <!-- 右上 -->
+  <h1>ExMatch - Fate/EXTRA パターンDB</h1>
+  <p class="siteName">ExMatch - Fate/EXTRA パターンDB</p>
+</header>
+<nav>
+  <ul id="menu" class="clearfix">
+    @MenuController.getNavMenu.map { item =>
+      @if(item.path == current){
+    <li class="current"><a href="@item.path">@item.name</a>
+      } else {
+    <li><a href="@item.path">@item.name</a></li>
+      }
+    }
+  </ul>
+</nav>

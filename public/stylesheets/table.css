@@ -1,0 +1,69 @@
+table {
+	border-bottom-style: none;
+	padding-bottom: 10px;
+	border-right-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-style: none;
+	border-left-style: none;
+	padding-top: 10px;
+}
+
+th {
+	border-bottom: #3f3f3f 1px solid;
+	text-align: left;
+	border-left: #3f3f3f 1px solid;
+	padding-bottom: 2px;
+	background-color: #f5f5dc;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	border-top: #3f3f3f 1px solid;
+	border-right: #3f3f3f 1px solid;
+	padding-top: 2px;
+	white-space: nowrap;
+}
+
+td {
+	border-bottom: #808080 1px solid;
+	border-left: #808080 1px solid;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 10pt;
+	border-top: #808080 1px solid;
+	border-right: #808080 1px solid;
+	padding-top: 5px;
+}
+
+.decending {
+	background-color:#99ff99;
+}
+
+.ascending {
+	background-color:#ff9999;
+}
+
+.lv3rd {
+	background-color:#9999ff;
+}
+
+.lv4th {
+	background-color:#ffff99;
+}
+
+.lv5th {
+	background-color:#99ffff;
+}
+
+.lv6th {
+	background-color:#ff99ff;
+}
+
+.waiting {
+	background-color:#a0d0f0;
+}
+
+.finished {
+	background-color:#f5dcf5;
+}

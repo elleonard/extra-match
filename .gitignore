@@ -1,0 +1,12 @@
+bin
+libexec
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/.cache
+/*.db
+/RUNNING_PID

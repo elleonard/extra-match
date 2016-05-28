@@ -1,0 +1,28 @@
+@()
+
+<form action="@routes.EnemyController.insertHabitat" method="post">
+  <table>
+    <tbody>
+      <tr><th>ステージ</th><th>敵名</th><th>確定</th>
+      <tr>
+        <td>
+          <select id="select_stage" name="stage">
+          </select>
+        </td>
+        <td>
+          <select id="select_enemy" name="enemy"></select>
+        </td>
+        <td>
+          <button type="submit" name="push" value="登録">登録</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+
+<script type="text/javascript" charset="utf-8"
+     src='@routes.StageController.stageListJs("#select_stage", "<option>")'></script>
+<script type="text/javascript" charset="utf-8"
+     src='@routes.Assets.at("javascripts/enemylist.js")'></script>
+
+

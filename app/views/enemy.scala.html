@@ -1,0 +1,29 @@
+@(message: String)
+
+@main("Fate EXTRA パターンDB", "/enemy") {
+    <div id="main">
+      <section id="message">
+        <article class="post">
+          <p>@message</p>
+        </article>
+      </section>
+      <section id="input_enemy">
+        <header><h2>敵登録</h2></header>
+        <article class="post">
+          @inputenemy()
+        </article>
+      </section>
+      <section id="input_habitat">
+        <header><h2>出現場所登録</h2></header>
+        <article class="post">
+          @inputhabitat()
+        </article>
+      </section>
+    </div>
+    <div id="sidebar">
+      <aside class="widget">
+        <h3>メニュー</h3>
+      </aside>
+      @link()
+    </div><!-- end sidebar -->
+}

@@ -1,0 +1,38 @@
+@(message: String, patterns: Seq[models.entity.ExtraPattern])
+
+@main("Fate EXTRA パターンDB", "/") {
+    <div id="main">
+      <section id="message">
+        <article class="post">
+          <p>@message</p>
+        </article>
+      </section>
+      <section id="about">
+        <header><h2>Fate EXTRA パターンDBとは</h2></header>
+        <article class="post">
+          <ul>
+            <li>Fate EXTRAにおける敵の行動パターンを記録したDBのこと
+            <li>パターンを入力して検索したり、DBにないパターンを登録することができる
+          </ul>
+        </article>
+      </section>
+      <section id="pattern">
+        <header><h2>パターン登録/検索</h2></header>
+        <article class="post">
+        @pattern()
+        </article>
+      </section>
+      <section id="data">
+        <header><h2>検索結果</h2></header>
+        <article class="post">
+        @result()
+        </article>
+      </section>
+    </div>
+    <div id="sidebar">
+      <aside class="widget">
+        <h3>メニュー</h3>
+      </aside>
+      @link()
+    </div><!-- end sidebar -->
+}

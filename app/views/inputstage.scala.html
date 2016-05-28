@@ -1,0 +1,17 @@
+@()
+
+<form action="@routes.StageController.insertStage" method="post">
+  <table>
+    <tbody>
+      <tr><th>ステージ名</th><th>確定</th>
+      <tr>
+        <td>
+          <input type="text" name="stage"/>
+        </td>
+        <td>
+          <button type="submit" name="push" value="登録">登録</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
