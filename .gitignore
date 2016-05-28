@@ -10,3 +10,5 @@ target
 /.cache
 /*.db
 /RUNNING_PID
+
+conf/application.conf
