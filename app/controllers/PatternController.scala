@@ -44,8 +44,6 @@ class PatternController @Inject()(service: ExtraPatternService) extends Controll
     val input = InputExtraPattern(enemy, p1, p2, p3, p4, p5, p6)
     val pattern = service.findPatterns(input.convert)
 
-    println("error"+ input)
-
     pattern.map (Ok(_))
   })
 }
