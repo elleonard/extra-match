@@ -40,15 +40,12 @@ class PatternController @Inject()(service: ExtraPatternService) extends Controll
     )
   })
 
-  def findPattern = Action.async(implicit request => {
-    form.bindFromRequest.fold(
-      error => Future(BadRequest("")),
-      data => {
-        val pattern = service.findPatterns(data.convert)
+  def findPattern(enemy: String, p1: String, p2: String, p3: String, p4: String, p5: String, p6: String) = Action.async(implicit request => {
+    val input = InputExtraPattern(enemy, p1, p2, p3, p4, p5, p6)
+    val pattern = service.findPatterns(input.convert)
 
-        pattern.map (Ok(_))
-      }
-    )
+    println("error"+ input)
+
+    pattern.map (Ok(_))
   })
-
 }
